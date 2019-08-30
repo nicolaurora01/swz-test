@@ -8,7 +8,7 @@
 
 #### 4. Project
 * create a private repo in github add ian74122@topskyweb.com into Collaborators(Settings->Collaborators)
-* you need finish those tickets from 1 to 7 then bonus.
+* you need finish those tickets from 1 to 7 then bonus. create new tickets in your github issue board.
 * Git commit message must be readable.
 * Build a website for disaster relief.
 
