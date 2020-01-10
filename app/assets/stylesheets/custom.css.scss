@@ -1,0 +1,14 @@
+.nav.navbar-right li {
+  .btn {
+    color: #fff !important;
+    margin-top: 5%;
+  }
+
+  .btn-danger:hover, .btn-danger:focus {
+    background-color: darken(#d9534f,20%) !important;
+  }
+
+  .btn-brown:hover, .btn-brown:focus {
+    background-color: darken(black,20%) !important;
+  }
+}
