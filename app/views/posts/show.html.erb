@@ -16,9 +16,12 @@
   <% end %>
   </dd>
 </dl>
-<%#= render partial: 'comments/form', comment: @comment %>
-<%= link_to t('.comment', :default => t("helpers.links.comment")),
-            new_comment_path, :class => 'btn btn-primary' , obj: @comment = @post.id %>
+<br>
+
+<h4> <%= @post.comments.count %> Comments</h4>
+     <%=render 'comments/comment' %>
+     <%=render 'comments/form' %>
+</br>
 <%= link_to t('.back', :default => t("helpers.links.back")),
               posts_path, :class => 'btn btn-default'  %>
 <%= link_to t('.edit', :default => t("helpers.links.edit")),
