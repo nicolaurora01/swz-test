@@ -3,9 +3,30 @@
     <div class="row">
       <span class="badge"><%= link_to "Edit Category Name", edit_category_path(@category) %></span>
     </div>
-  <%#= will_paginate @category_articles %>
+  <%= will_paginate @category_post %>
 </div>
-<%#= render '', obj: @category_articles %>
+<br>
+<br>
+<% @category.post.each do |post| %>
+  <ul class="listing">
+    <div class="row">
+      <div class="well col-md-4 col-md-offset-4">
+        <tr>
+          <td><h5><%= post.title %></h5></td>
+
+          <td><small><%= post.comments.count%> comment </small></td>
+           <br>
+          <td><small><%= time_ago_in_words(post.created_at)%></small></td>
+          <br>
+        </tr>
+      </div>
+    </div>
+  </ul>
+  </br>
+<% end %>
+</tbody>
+
+
 <div align="center">
-  <%#= will_paginate @category_articles %>
+  <%= will_paginate @category_post %>
 </div>

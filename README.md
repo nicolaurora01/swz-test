@@ -1,11 +1,11 @@
 ## Midterm Exam
 
 #### 1. Explaining the purpose of the Gemfile?(10%)
-
+        a series of scripts to help developer make fast and easy conding and helping newbies to make basic system 
 #### 2. Explaining the purpose and principle of the Migration?(10%)
-
+        to make database easy to modify and keep the database schema changes
 #### 3. Explaining what is RESTful routes?(10%)
-
+        its help the developer to know path of easy function and view
 #### 4. Project
 * create a private repo in github add ian74122@topskyweb.com into Collaborators(Settings->Collaborators)
 * you need finish those tickets from 1 to 7 then bonus. create new tickets in your github issue board.
