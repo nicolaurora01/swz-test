@@ -1,13 +1,12 @@
 <%- model_class = Post -%>
-<%= will_paginate @post %>
+
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+<%= will_paginate @post %>
 </div>
-
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%= model_class.human_attribute_name(:comment) %></th>
@@ -17,7 +16,6 @@
 
     <% @posts.each do |post| %>
       <tr>
-        <td><%= link_to post.id, post_path(post) %></td>
         <td><%= link_to post.title, post_path(post) %></td>
         <td><%=l post.created_at %></td>
         <td><%= post.comments.count%></td>
@@ -28,3 +26,5 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_post_path,
             :class => 'btn btn-primary' %>
+<%= link_to t('.back', :default => t("helpers.links.back")),
+            root_path, :class => 'btn btn-default'  %>
